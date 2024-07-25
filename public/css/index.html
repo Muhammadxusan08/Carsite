@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
 
-    
-    
+<body class="body_header">
+    <style>
+        .body_header {
+            background-image: url(./bg.img/Rectangle\ 64.png);
+            background-size: cover;
+        }
+    </style>
+
+
+    <!-- Header -->
+    <header class="py-11">
+        <!-- Container -->
+        <div class="max-w-[1296px] mx-auto px-5 flex items-center justify-between">
+            <!-- UL li -->
+            <ul class="lg:flex hidden xl:gap-10 gap-10 mx-auto">
+                <li class="font font-medium text-[24px] leading-[28px] items-center text-[white]"><a href="#"
+                        class=" ">Главная</a></li>
+                <li class="font font-medium text-[24px] leading-[28px] items-center text-[white]"><a href="#"
+                        class="">Оклейка автомобилей</a></li>
+                <li class="font font-medium text-[24px] leading-[28px] items-center text-[white]"><a href="#"
+                        class="">Детейлинг автомобилей</a></li>
+                <li class="font font-medium text-[24px] leading-[28px] items-center text-[white]"><a href="#"
+                        class="">Галерея работ</a></li>
+            </ul>
+
+            <!-- Menu -->
+            <section class="z-[2111] lg:hidden flex">
+                <div class="menu-container">
+                    <div class="hamburger">
+                        <input class="checkbox" type="checkbox" />
+                        <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+                            <path class="lineTop line" stroke-linecap="round" stroke-width="4" d="M6 11L44 11"></path>
+                            <path class="lineMid line" stroke-linecap="round" stroke-width="4" d="M6 24H43"></path>
+                            <path class="lineBottom line" stroke-linecap="round" stroke-width="4" d="M6 37H43"></path>
+                        </svg>
+                    </div>
+                    <nav class="side-menu" id="sideMenu">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Оклейка автомобилей</a></li>
+                            <li><a href="#">Детейлинг автомобилей</a></li>
+                            <li><a href="#">Галерея работ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+
+        </div>
+    </header>
+
+
+
+    <!-- SECTION -->
+    <section class="pt-[50px] pb-[180px] md:py-[100px]">
+        <!-- Section-container -->
+        <div class="max-w-[1296px] mx-auto px-5">
+            <h1
+                class="text-center md:h-[188px] font-bold ggg text-[60px] md:text-[120px] text-[#DB3138] mb-[25px] sm:mb-10  md:mb-[61px]">
+                CAR MUSC</h1>
+
+            <div class="flex gap-[30px] mx-auto justify-center sm:mb-10 mb-2">
+                <div class="w-[10px] h-[10px] bg-[#DB3138] rotate-[45 deg] rotate-45"></div>
+                <div class="w-[10px] h-[10px] bg-[#DB3138] rotate-[45 deg] rotate-45"></div>
+                <div class="w-[10px] h-[10px] bg-[#DB3138] rotate-[45 deg] rotate-45"></div>
+                <div class="w-[10px] h-[10px] bg-[#DB3138] rotate-[45 deg] rotate-45"></div>
+            </div>
+
+            <p
+                class="max-w-[437px] text-[18px] sm:text-[25px] font-medium leading-[30px] text-center text-white mx-auto mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.
+            </p>
+
+           
+           <div class="flex items-center justify-center">
+            <a href="#" class="button">
+                <p class="button-text">Наши услуги</p> <p class="iconer"><svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg></p>  
+              </a>
+
+           </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class=" border-b border-t border-[#898989] ">
+        <!-- Container -->
+        <div class="grid mx-auto px-5  justify-between md:grid-cols-3 grid-cols-1">
+
+            <!-- 1 -->
+            <div class="py-[15px] md:py-[50px] w-full border-b border-[#898989] md:border-b-0">
+                <h2 class="mb-5 font-semibold text-[18px] leading-[25px] text-white text-center">адрес:</h2>
+                <p class="font-semibold text-center leading-[33px] text-[18px] sm:text-[24px] text-[#DB3138]">
+                    Timiryazevskaya str. 2, Moscow</p>
+            </div>
+
+            <!-- 2 -->
+            <div
+                class=" py-[15px] md:py-[50px] w-full md:border-l border-r-0 md:border-r border-[#898989] border-b md:border-b-0">
+                <h2 class="mb-5 font-semibold text-[18px] leading-[25px] text-white text-center">телефон:</h2>
+                <p class="font-semibold text-center leading-[33px] text-[18px] sm:text-[24px] text-[#DB3138]"><a
+                        href="Tel: 8 (812) 123-45-67" class="">8 (812) 123-45-67</a></p>
+                <p class="font-semibold text-center leading-[33px] text-[18px] sm:text-[24px] text-[#DB3138]"><a
+                        href="Tel: 8 (812) 123-45-67" class="">8-911-123-45-67</a></p>
+            </div>
+
+            <!-- 3 -->
+            <div class=" py-[15px] md:py-[50px]  w-full">
+                <h2 class="mb-5 font-semibold text-[18px] leading-[25px] text-white text-center">Режим работы:</h2>
+                <p class="font-semibold text-center leading-[33px] text-[18px] sm:text-[24px] text-[#DB3138]">пн-пт :
+                    10:00 - 20:00
+                </p>
+                <p class="font-semibold text-center leading-[33px] text-[18px] sm:text-[24px] text-[#DB3138]">сб-вск :
+                    12:00 -
+                    20:00</p>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+<script src="../css/script.js"></script>
 </body>
+
 </html>

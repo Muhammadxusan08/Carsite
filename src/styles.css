@@ -1,3 +1,172 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.font{
+  transition: all 0.3s;
+}
+
+.font:hover{
+    color: #DB3138;
+}
+
+/* @font-face{
+    font-family: myFont;
+    src:url(mmmm.ttf)
+}
+body{
+    font-family: myFont;
+} */
+
+.ggg{
+    letter-spacing: -5px;
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.hamburger {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger .checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.line {
+    transition: 0.5s;
+    stroke-width: 4px;
+    stroke: crimson; /* Qizil rang */
+}
+
+.lineTop {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 25;
+}
+
+.lineMid {
+    stroke-dasharray: 40 40;
+}
+
+.lineBottom {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 60;
+}
+
+.hamburger .checkbox:checked + svg .lineTop {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.hamburger .checkbox:checked + svg .lineMid {
+    stroke-dashoffset: 40;
+}
+
+.hamburger .checkbox:checked + svg .lineBottom {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #1f1f1f;
+    color: #fff;
+    transition: right 0.3s;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    overflow: auto;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    transition: all 0.2s;
+}
+
+.side-menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.side-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.side-menu ul li a:hover {
+    color: #f2161d;
+}
+
+.side-menu.open {
+    right: 0;
+    padding-top: 70px;
+}
+
+
+
+
+
+/* NASHI USLUG"I */
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    background: #DB3138;
+    color: #fff;
+  }
+  
+  .button-text {
+    transform: translateX(15px);
+    font-size: 1.5em;
+    font-weight: 700;
+    transition-duration: 0.3s;
+  }
+  
+  .iconer {
+    transform: translateY(40px);
+    transition-duration: 0.3s;
+  }
+  
+  .button:hover .button-text {
+    transform: translateX(0px);
+  }
+  
+  .button:hover .iconer {
+    transform: translateY(0px);
+  }
+  
+  
+  
