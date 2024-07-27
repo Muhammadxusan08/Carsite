@@ -11,13 +11,13 @@
     color: #DB3138;
 }
 
-/* @font-face{
+@font-face{
     font-family: myFont;
     src:url(mmmm.ttf)
 }
 body{
     font-family: myFont;
-} */
+}
 
 .ggg{
     letter-spacing: -5px;
