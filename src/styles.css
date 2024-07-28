@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+html {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Barcha sahifa scrollarini silliq qiladi */
+}
+
+
 .font{
   transition: all 0.3s;
 }
